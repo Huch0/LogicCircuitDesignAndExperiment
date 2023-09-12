@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, Block1.bdf
+source_file = 1, week2_1.bdf
+source_file = 1, C:/Users/user/Documents/LogicCircuitDesignAndExperiment/logiccircuitdesignandexperiment.bdf
+design_name = LogicCircuitDesignAndExperiment
+instance = comp, \C~I , C, LogicCircuitDesignAndExperiment, 1
+instance = comp, \B~I , B, LogicCircuitDesignAndExperiment, 1
+instance = comp, \A~I , A, LogicCircuitDesignAndExperiment, 1
+instance = comp, \D~I , D, LogicCircuitDesignAndExperiment, 1
+instance = comp, \inst10~0 , inst10~0, LogicCircuitDesignAndExperiment, 1
+instance = comp, \Result0~I , Result0, LogicCircuitDesignAndExperiment, 1
+instance = comp, \Result1~I , Result1, LogicCircuitDesignAndExperiment, 1

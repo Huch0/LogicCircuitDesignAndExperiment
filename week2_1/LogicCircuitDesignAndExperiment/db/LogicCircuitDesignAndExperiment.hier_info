@@ -1,0 +1,14 @@
+|LogicCircuitDesignAndExperiment
+Result0 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+B => inst5.IN0
+A => inst.IN1
+A => inst7.IN1
+A => inst9.IN1
+C => inst6.IN0
+C => inst5.IN1
+D => inst6.IN1
+D => inst5.IN2
+Result1 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
