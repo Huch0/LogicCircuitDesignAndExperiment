@@ -1,0 +1,212 @@
+|zero_to_eleven_adder
+Carry <= four_bits_adder:inst1.Cout
+Cin => four_bits_adder:inst1.ground
+A0 => decimal_to_binary_converter:inst.Zero
+A1 => decimal_to_binary_converter:inst.One
+A2 => decimal_to_binary_converter:inst.Two
+A3 => decimal_to_binary_converter:inst.Three
+A4 => decimal_to_binary_converter:inst.Four
+A5 => decimal_to_binary_converter:inst.Five
+A6 => decimal_to_binary_converter:inst.Six
+A7 => decimal_to_binary_converter:inst.Seven
+A8 => decimal_to_binary_converter:inst.Eight
+A9 => decimal_to_binary_converter:inst.Nine
+A10 => decimal_to_binary_converter:inst.Ten
+A11 => decimal_to_binary_converter:inst.Eleven
+B0 => decimal_to_binary_converter:inst2.Zero
+B1 => decimal_to_binary_converter:inst2.One
+B2 => decimal_to_binary_converter:inst2.Two
+B3 => decimal_to_binary_converter:inst2.Three
+B4 => decimal_to_binary_converter:inst2.Four
+B5 => decimal_to_binary_converter:inst2.Five
+B6 => decimal_to_binary_converter:inst2.Six
+B7 => decimal_to_binary_converter:inst2.Seven
+B8 => decimal_to_binary_converter:inst2.Eight
+B9 => decimal_to_binary_converter:inst2.Nine
+B10 => decimal_to_binary_converter:inst2.Ten
+B11 => decimal_to_binary_converter:inst2.Eleven
+Sum3 <= four_bits_adder:inst1.S3
+Sum2 <= four_bits_adder:inst1.S2
+Sum1 <= four_bits_adder:inst1.S1
+Sum0 <= four_bits_adder:inst1.S0
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1
+S0 <= full_adder:inst.S
+X0 => full_adder:inst.X
+Y0 => full_adder:inst.Y
+ground => full_adder:inst.CarryIn
+S1 <= full_adder:inst2.S
+X1 => full_adder:inst2.X
+Y1 => full_adder:inst2.Y
+S2 <= full_adder:inst3.S
+X2 => full_adder:inst3.X
+Y2 => full_adder:inst3.Y
+S3 <= full_adder:inst4.S
+X3 => full_adder:inst4.X
+Y3 => full_adder:inst4.Y
+Cout <= full_adder:inst4.CarryOut
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst
+S <= half_adder:inst1.Sum
+X => half_adder:inst.A
+Y => half_adder:inst.B
+CarryIn => half_adder:inst1.B
+CarryOut <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst|half_adder:inst1
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+Carry <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst|half_adder:inst
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+Carry <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst2
+S <= half_adder:inst1.Sum
+X => half_adder:inst.A
+Y => half_adder:inst.B
+CarryIn => half_adder:inst1.B
+CarryOut <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst2|half_adder:inst1
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+Carry <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst2|half_adder:inst
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+Carry <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst3
+S <= half_adder:inst1.Sum
+X => half_adder:inst.A
+Y => half_adder:inst.B
+CarryIn => half_adder:inst1.B
+CarryOut <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst3|half_adder:inst1
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+Carry <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst3|half_adder:inst
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+Carry <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst4
+S <= half_adder:inst1.Sum
+X => half_adder:inst.A
+Y => half_adder:inst.B
+CarryIn => half_adder:inst1.B
+CarryOut <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst4|half_adder:inst1
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+Carry <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|four_bits_adder:inst1|full_adder:inst4|half_adder:inst
+Sum <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+A => inst2.IN0
+A => inst.IN0
+B => inst2.IN1
+B => inst.IN1
+Carry <= inst.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|zero_to_eleven_adder|decimal_to_binary_converter:inst
+b0 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Zero => inst11.IN0
+Zero => inst5.IN0
+One => inst3.IN0
+Five => inst3.IN1
+Five => inst1.IN3
+Three => inst3.IN2
+Three => inst2.IN2
+Seven => inst3.IN3
+Seven => inst2.IN3
+Seven => inst1.IN2
+Nine => inst3.IN4
+Nine => inst.IN3
+Eleven => inst3.IN5
+Eleven => inst2.IN5
+Eleven => inst.IN2
+b1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Two => inst2.IN0
+Six => inst2.IN1
+Six => inst1.IN1
+Ten => inst2.IN4
+Ten => inst.IN1
+b2 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Four => inst1.IN0
+b3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Eight => inst.IN0
+
+
+|zero_to_eleven_adder|decimal_to_binary_converter:inst2
+b0 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+Zero => inst11.IN0
+Zero => inst5.IN0
+One => inst3.IN0
+Five => inst3.IN1
+Five => inst1.IN3
+Three => inst3.IN2
+Three => inst2.IN2
+Seven => inst3.IN3
+Seven => inst2.IN3
+Seven => inst1.IN2
+Nine => inst3.IN4
+Nine => inst.IN3
+Eleven => inst3.IN5
+Eleven => inst2.IN5
+Eleven => inst.IN2
+b1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+Two => inst2.IN0
+Six => inst2.IN1
+Six => inst1.IN1
+Ten => inst2.IN4
+Ten => inst.IN1
+b2 <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+Four => inst1.IN0
+b3 <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+Eight => inst.IN0
+
+

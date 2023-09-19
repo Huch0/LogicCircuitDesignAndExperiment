@@ -1,0 +1,11 @@
+Fitter Status : Successful - Tue Sep 19 21:37:56 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : week3_1_2
+Top-level Entity Name : zero_to_eleven_adder
+Family : MAX V
+Device : 5M40ZE64C4
+Timing Models : Final
+Total logic elements : 18 / 40 ( 45 % )
+Total pins : 30 / 54 ( 56 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

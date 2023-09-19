@@ -1,0 +1,287 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/user/Documents/GitHub/LogicCircuitDesignAndExperiment/week3_1_2/simulation/qsim
+vdecimal_to_binary_converter
+Z1 !s110 1695126895
+!i10b 1
+!s100 gI]azldXed6PVAmk?hLDL2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IUHCD_jEe5?6B7@XT[N[T@3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1695126894
+Z4 8week3_1_2.vo
+Z5 Fweek3_1_2.vo
+!i122 44
+L0 32 407
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z7 !s108 1695126895.000000
+Z8 !s107 week3_1_2.vo|
+Z9 !s90 -work|work|week3_1_2.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vdecimal_to_binary_converter_vlg_vec_tst
+R1
+!i10b 1
+!s100 X?3NXXlTGmBTNkQh@IVH32
+R2
+I19`^VYI7[O3fo_86>P<d61
+R3
+R0
+w1695126893
+8decimal_to_binary_converter.vwf.vt
+Fdecimal_to_binary_converter.vwf.vt
+!i122 45
+L0 30 124
+R6
+r1
+!s85 0
+31
+R7
+!s107 decimal_to_binary_converter.vwf.vt|
+!s90 -work|work|decimal_to_binary_converter.vwf.vt|
+!i113 1
+R10
+R11
+vfour_bits_adder
+Z12 !s110 1695127050
+!i10b 1
+!s100 g_K8m<]2lMo[KSh`Y<8BO3
+R2
+I6A7iSJ6K1I?c_H;CHkbZg2
+R3
+R0
+w1695127049
+R4
+R5
+!i122 52
+L0 32 492
+R6
+r1
+!s85 0
+31
+Z13 !s108 1695127050.000000
+R8
+R9
+!i113 1
+R10
+R11
+vfour_bits_adder_vlg_vec_tst
+R12
+!i10b 1
+!s100 dN0WN]J>m_zA7l@Y^lB872
+R2
+I1`Wf9V28M]i:0MhJSXWd@1
+R3
+R0
+w1695127048
+8four_bits_adder.vwf.vt
+Ffour_bits_adder.vwf.vt
+!i122 53
+L0 30 120
+R6
+r1
+!s85 0
+31
+R13
+!s107 four_bits_adder.vwf.vt|
+!s90 -work|work|four_bits_adder.vwf.vt|
+!i113 1
+R10
+R11
+vfull_adder
+!s110 1695127015
+!i10b 1
+!s100 ^gTGz1KHLAi9cIC5JWgPz3
+R2
+I3_@iQ8B7W`b31=nz5I>@e3
+R3
+R0
+w1695127014
+R4
+R5
+!i122 50
+L0 32 156
+R6
+r1
+!s85 0
+31
+Z14 !s108 1695127015.000000
+R8
+R9
+!i113 1
+R10
+R11
+vfull_adder_vlg_vec_tst
+!s110 1695127016
+!i10b 1
+!s100 93gTzfI`1:]T1d?ZGkLlU2
+R2
+Ig8JzP12Gc:od:2BX84`o;0
+R3
+R0
+w1695127013
+8full_adder.vwf.vt
+Ffull_adder.vwf.vt
+!i122 51
+L0 30 54
+R6
+r1
+!s85 0
+31
+R14
+!s107 full_adder.vwf.vt|
+!s90 -work|work|full_adder.vwf.vt|
+!i113 1
+R10
+R11
+vhalf_adder
+Z15 !s110 1695126987
+!i10b 1
+!s100 flU@?USD[UgKzKI=;^O<73
+R2
+I@X]?2QhWQ6[Ef9P=IS:gB1
+R3
+R0
+w1695126986
+R4
+R5
+!i122 48
+L0 32 143
+R6
+r1
+!s85 0
+31
+Z16 !s108 1695126987.000000
+R8
+R9
+!i113 1
+R10
+R11
+vhalf_adder_vlg_vec_tst
+R15
+!i10b 1
+!s100 k=m5MCUi_R3e5PjDa?iZ92
+R2
+InMdQCXg]S;A?l:iLj6Yag3
+R3
+R0
+w1695126985
+8half_adder.vwf.vt
+Fhalf_adder.vwf.vt
+!i122 49
+L0 30 40
+R6
+r1
+!s85 0
+31
+R16
+!s107 half_adder.vwf.vt|
+!s90 -work|work|half_adder.vwf.vt|
+!i113 1
+R10
+R11
+vtwo_bits_compare
+Z17 !s110 1695126960
+!i10b 1
+!s100 TAgkN2lcX7@olYN<j8mjT0
+R2
+Im<:1FcYRzY]@mmn;H8VLP3
+R3
+R0
+w1695126959
+R4
+R5
+!i122 46
+L0 32 218
+R6
+r1
+!s85 0
+31
+Z18 !s108 1695126960.000000
+R8
+R9
+!i113 1
+R10
+R11
+vtwo_bits_compare_vlg_vec_tst
+R17
+!i10b 1
+!s100 UPP[R`GBEW2cR@Q>oegoX2
+R2
+ITH?EY04bVf1i9:=k?b_H?2
+R3
+R0
+w1695126958
+8two_bits_compare.vwf.vt
+Ftwo_bits_compare.vwf.vt
+!i122 47
+L0 30 64
+R6
+r1
+!s85 0
+31
+R18
+!s107 two_bits_compare.vwf.vt|
+!s90 -work|work|two_bits_compare.vwf.vt|
+!i113 1
+R10
+R11
+vzero_to_eleven_adder
+Z19 !s110 1695127085
+!i10b 1
+!s100 4k^]K9:WY_Cg6B8B`KAIN1
+R2
+IQA<<R0hZOF<@ahF]L8gio0
+R3
+R0
+Z20 w1695127083
+R4
+R5
+!i122 54
+L0 32 1068
+R6
+r1
+!s85 0
+31
+Z21 !s108 1695127085.000000
+R8
+R9
+!i113 1
+R10
+R11
+vzero_to_eleven_adder_vlg_vec_tst
+R19
+!i10b 1
+!s100 YZJl_iLiQoTYaCIM@mG4j3
+R2
+Ie_Ke;cHQGV^Z>ijFU22HR2
+R3
+R0
+R20
+8zero_to_eleven_adder.vwf.vt
+Fzero_to_eleven_adder.vwf.vt
+!i122 55
+L0 30 236
+R6
+r1
+!s85 0
+31
+R21
+!s107 zero_to_eleven_adder.vwf.vt|
+!s90 -work|work|zero_to_eleven_adder.vwf.vt|
+!i113 1
+R10
+R11

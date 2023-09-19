@@ -1,0 +1,9 @@
+Analysis & Synthesis Status : Successful - Tue Sep 19 21:37:53 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : week3_1_2
+Top-level Entity Name : zero_to_eleven_adder
+Family : MAX V
+Total logic elements : 18
+Total pins : 30
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

@@ -19,31 +19,13 @@
 #
 # Quartus Prime
 # Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-# Date created = 19:15:35  September 19, 2023
-#
-# -------------------------------------------------------------------------- #
-#
-# Notes:
-#
-# 1) The default values for assignments are stored in the file:
-#		week3_3_assignment_defaults.qdf
-#    If this file doesn't exist, see file:
-#		assignment_defaults.qdf
-#
-# 2) Altera recommends that you do not modify this file. This
-#    file is updated automatically by the Quartus Prime software
-#    and any changes you make may be lost or overwritten.
+# Date created = 20:50:20  September 19, 2023
 #
 # -------------------------------------------------------------------------- #
 
+QUARTUS_VERSION = "20.1"
+DATE = "20:50:20  September 19, 2023"
 
-set_global_assignment -name FAMILY "MAX V"
-set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY four_bits_compare
-set_global_assignment -name ORIGINAL_QUARTUS_VERSION 20.1.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:15:35  SEPTEMBER 19, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "20.1.1 Lite Edition"
-set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
-set_global_assignment -name BDF_FILE two_bits_compare.bdf
-set_global_assignment -name BDF_FILE four_bits_compare.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE four_bits_compare.vwf
+# Revisions
+
+PROJECT_REVISION = "week3_1_2"
