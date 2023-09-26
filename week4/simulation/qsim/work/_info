@@ -1,0 +1,287 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/user/Documents/GitHub/LogicCircuitDesignAndExperiment/week4/simulation/qsim
+vd_flipflop_asynchronous_reset
+Z1 !s110 1695720887
+!i10b 1
+!s100 z[hWCfQNPmA>Y;UQ12czz1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IZ7<0D@Z:Yh0HgAWP4k2LZ2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1695720885
+Z4 8week4.vo
+Z5 Fweek4.vo
+!i122 0
+L0 32 107
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1695720886.000000
+Z7 !s107 week4.vo|
+Z8 !s90 -work|work|week4.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+vd_flipflop_asynchronous_reset_vlg_vec_tst
+R1
+!i10b 1
+!s100 T@EZ_1SlSA_dSk^DCmcWQ1
+R2
+ILDP7SPcNfJ`<WP;@UDG2B0
+R3
+R0
+w1695720884
+8d_flipflop_asynchronous_reset.vwf.vt
+Fd_flipflop_asynchronous_reset.vwf.vt
+!i122 1
+L0 30 56
+R6
+r1
+!s85 0
+31
+!s108 1695720887.000000
+!s107 d_flipflop_asynchronous_reset.vwf.vt|
+!s90 -work|work|d_flipflop_asynchronous_reset.vwf.vt|
+!i113 1
+R9
+R10
+vd_flipflop_synchronous_reset
+Z11 !s110 1695722433
+!i10b 1
+!s100 9zU]T^cSz3bz39zOOBz?_2
+R2
+InNcAHhB2jn9QOIC2VYJKR0
+R3
+R0
+w1695722432
+R4
+R5
+!i122 6
+L0 32 144
+R6
+r1
+!s85 0
+31
+Z12 !s108 1695722433.000000
+R7
+R8
+!i113 1
+R9
+R10
+vd_flipflop_synchronous_reset_vlg_vec_tst
+R11
+!i10b 1
+!s100 dE`JCY[GNPn0ZF4E@Dhm;2
+R2
+IMNbW0nYZ`P`G8jfZYNOj?2
+R3
+R0
+w1695722431
+8d_flipflop_synchronous_reset.vwf.vt
+Fd_flipflop_synchronous_reset.vwf.vt
+!i122 7
+L0 30 60
+R6
+r1
+!s85 0
+31
+R12
+!s107 d_flipflop_synchronous_reset.vwf.vt|
+!s90 -work|work|d_flipflop_synchronous_reset.vwf.vt|
+!i113 1
+R9
+R10
+vdff_synchronous_reset_clock_enable
+Z13 !s110 1695726250
+!i10b 1
+!s100 1G=6iz9Ne`T@3FC:6L:W13
+R2
+I>>^Pl85?5EK`5kWIT2cAH2
+R3
+R0
+w1695726249
+R4
+R5
+!i122 20
+L0 32 157
+R6
+r1
+!s85 0
+31
+Z14 !s108 1695726250.000000
+R7
+R8
+!i113 1
+R9
+R10
+vdff_synchronous_reset_clock_enable_vlg_vec_tst
+R13
+!i10b 1
+!s100 fH9on9PS_nmJcCGFMdinP1
+R2
+IFYX>?XdNWH31J8?oUcN4c2
+R3
+R0
+w1695726248
+Z15 8dff_synchronous_reset_clock_enable.vwf.vt
+Z16 Fdff_synchronous_reset_clock_enable.vwf.vt
+!i122 21
+L0 30 64
+R6
+r1
+!s85 0
+31
+R14
+Z17 !s107 dff_synchronous_reset_clock_enable.vwf.vt|
+Z18 !s90 -work|work|dff_synchronous_reset_clock_enable.vwf.vt|
+!i113 1
+R9
+R10
+vdouble_four_bit_register
+Z19 !s110 1695727160
+!i10b 1
+!s100 fZWeSaS9LJ_RHIGIiXYhA0
+R2
+I0LidNXd38IFL85?aoSZLX3
+R3
+R0
+w1695727159
+R4
+R5
+!i122 22
+L0 32 539
+R6
+r1
+!s85 0
+31
+Z20 !s108 1695727160.000000
+R7
+R8
+!i113 1
+R9
+R10
+vdouble_four_bit_register_vlg_vec_tst
+R19
+!i10b 1
+!s100 6_X94@1=o@FYlD^QnET9D3
+R2
+IRHkXT4F^]C3cCF]ZG8^?L0
+R3
+R0
+w1695727158
+8double_four_bit_register.vwf.vt
+Fdouble_four_bit_register.vwf.vt
+!i122 23
+L0 30 117
+R6
+r1
+!s85 0
+31
+R20
+!s107 double_four_bit_register.vwf.vt|
+!s90 -work|work|double_four_bit_register.vwf.vt|
+!i113 1
+R9
+R10
+vfour_synchronous_dff_clock_enable
+Z21 !s110 1695726199
+!i10b 1
+!s100 @8ch3:m_gTi:6]4UA]7A82
+R2
+IHol1hEZh`=e[2Ne=N@L6A0
+R3
+R0
+Z22 w1695726197
+R4
+R5
+!i122 16
+L0 32 343
+R6
+r1
+!s85 0
+31
+Z23 !s108 1695726199.000000
+R7
+R8
+!i113 1
+R9
+R10
+vfour_synchronous_dff_clock_enable_vlg_vec_tst
+R21
+!i10b 1
+!s100 >;F3^j]e1_N0Z?k`A64j[0
+R2
+IWo<aFP;TaCNg;Zl@G2FS[2
+R3
+R0
+R22
+R15
+R16
+!i122 17
+L0 30 66
+R6
+r1
+!s85 0
+31
+R23
+R17
+R18
+!i113 1
+R9
+R10
+vfour_synchronous_dff_synchronous_reset
+Z24 !s110 1695724731
+!i10b 1
+!s100 hQcgZAPgT`QfnX7[V:aM:2
+R2
+IEJ3W_825Uizb2<@?4c>h11
+R3
+R0
+w1695724730
+R4
+R5
+!i122 12
+L0 32 291
+R6
+r1
+!s85 0
+31
+Z25 !s108 1695724731.000000
+R7
+R8
+!i113 1
+R9
+R10
+vfour_synchronous_dff_synchronous_reset_vlg_vec_tst
+R24
+!i10b 1
+!s100 2h<Hj2E2D3>GW=ZLD@fHP2
+R2
+Izgci9]iA8K_>0T??o`j3V1
+R3
+R0
+w1695724729
+8four_synchronous_dff_synchronous_reset.vwf.vt
+Ffour_synchronous_dff_synchronous_reset.vwf.vt
+!i122 13
+L0 30 55
+R6
+r1
+!s85 0
+31
+R25
+!s107 four_synchronous_dff_synchronous_reset.vwf.vt|
+!s90 -work|work|four_synchronous_dff_synchronous_reset.vwf.vt|
+!i113 1
+R9
+R10

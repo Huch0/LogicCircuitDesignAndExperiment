@@ -1,0 +1,339 @@
+|double_four_bit_register
+A1 <= four_synchronous_dff_clock_enable:inst.Dout1
+d1 => four_synchronous_dff_clock_enable:inst.d1
+d2 => four_synchronous_dff_clock_enable:inst.d2
+d3 => four_synchronous_dff_clock_enable:inst.d3
+d4 => four_synchronous_dff_clock_enable:inst.d4
+Ce => four_synchronous_dff_clock_enable:inst.Ce
+Ce => four_synchronous_dff_clock_enable:inst1.Ce
+CLK => four_synchronous_dff_clock_enable:inst.CLK
+CLK => four_synchronous_dff_clock_enable:inst1.CLK
+RST => four_synchronous_dff_clock_enable:inst.RST
+RST => four_synchronous_dff_clock_enable:inst1.RST
+A2 <= four_synchronous_dff_clock_enable:inst.Dout2
+A3 <= four_synchronous_dff_clock_enable:inst.Dout3
+A4 <= four_synchronous_dff_clock_enable:inst.Dout4
+B1 <= four_synchronous_dff_clock_enable:inst1.Dout1
+B2 <= four_synchronous_dff_clock_enable:inst1.Dout2
+B3 <= four_synchronous_dff_clock_enable:inst1.Dout3
+B4 <= four_synchronous_dff_clock_enable:inst1.Dout4
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst
+Dout1 <= dff_synchronous_reset_clock_enable:inst.Qout
+d1 => dff_synchronous_reset_clock_enable:inst.Din
+Ce => dff_synchronous_reset_clock_enable:inst.Ce
+Ce => dff_synchronous_reset_clock_enable:inst4.Ce
+Ce => dff_synchronous_reset_clock_enable:inst2.Ce
+Ce => dff_synchronous_reset_clock_enable:inst3.Ce
+CLK => dff_synchronous_reset_clock_enable:inst.CLK
+CLK => dff_synchronous_reset_clock_enable:inst4.CLK
+CLK => dff_synchronous_reset_clock_enable:inst2.CLK
+CLK => dff_synchronous_reset_clock_enable:inst3.CLK
+RST => dff_synchronous_reset_clock_enable:inst.RST
+RST => dff_synchronous_reset_clock_enable:inst4.RST
+RST => dff_synchronous_reset_clock_enable:inst2.RST
+RST => dff_synchronous_reset_clock_enable:inst3.RST
+Dout2 <= dff_synchronous_reset_clock_enable:inst4.Qout
+d2 => dff_synchronous_reset_clock_enable:inst4.Din
+Dout3 <= dff_synchronous_reset_clock_enable:inst2.Qout
+d3 => dff_synchronous_reset_clock_enable:inst2.Din
+Dout4 <= dff_synchronous_reset_clock_enable:inst3.Qout
+d4 => dff_synchronous_reset_clock_enable:inst3.Din
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst
+Qout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst3.IN0
+CLK => inst2.CLK
+RST => inst4.IN0
+Ce => BUSMUX:inst.sel
+Din => BUSMUX:inst.datab[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_i6c:auto_generated.data[0]
+data[1][0] => mux_i6c:auto_generated.data[1]
+sel[0] => mux_i6c:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_i6c:auto_generated.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst|BUSMUX:inst|lpm_mux:$00000|mux_i6c:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst4
+Qout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst3.IN0
+CLK => inst2.CLK
+RST => inst4.IN0
+Ce => BUSMUX:inst.sel
+Din => BUSMUX:inst.datab[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst4|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst4|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_i6c:auto_generated.data[0]
+data[1][0] => mux_i6c:auto_generated.data[1]
+sel[0] => mux_i6c:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_i6c:auto_generated.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst4|BUSMUX:inst|lpm_mux:$00000|mux_i6c:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst2
+Qout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst3.IN0
+CLK => inst2.CLK
+RST => inst4.IN0
+Ce => BUSMUX:inst.sel
+Din => BUSMUX:inst.datab[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst2|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst2|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_i6c:auto_generated.data[0]
+data[1][0] => mux_i6c:auto_generated.data[1]
+sel[0] => mux_i6c:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_i6c:auto_generated.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst2|BUSMUX:inst|lpm_mux:$00000|mux_i6c:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst3
+Qout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst3.IN0
+CLK => inst2.CLK
+RST => inst4.IN0
+Ce => BUSMUX:inst.sel
+Din => BUSMUX:inst.datab[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst3|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst3|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_i6c:auto_generated.data[0]
+data[1][0] => mux_i6c:auto_generated.data[1]
+sel[0] => mux_i6c:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_i6c:auto_generated.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst|dff_synchronous_reset_clock_enable:inst3|BUSMUX:inst|lpm_mux:$00000|mux_i6c:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1
+Dout1 <= dff_synchronous_reset_clock_enable:inst.Qout
+d1 => dff_synchronous_reset_clock_enable:inst.Din
+Ce => dff_synchronous_reset_clock_enable:inst.Ce
+Ce => dff_synchronous_reset_clock_enable:inst4.Ce
+Ce => dff_synchronous_reset_clock_enable:inst2.Ce
+Ce => dff_synchronous_reset_clock_enable:inst3.Ce
+CLK => dff_synchronous_reset_clock_enable:inst.CLK
+CLK => dff_synchronous_reset_clock_enable:inst4.CLK
+CLK => dff_synchronous_reset_clock_enable:inst2.CLK
+CLK => dff_synchronous_reset_clock_enable:inst3.CLK
+RST => dff_synchronous_reset_clock_enable:inst.RST
+RST => dff_synchronous_reset_clock_enable:inst4.RST
+RST => dff_synchronous_reset_clock_enable:inst2.RST
+RST => dff_synchronous_reset_clock_enable:inst3.RST
+Dout2 <= dff_synchronous_reset_clock_enable:inst4.Qout
+d2 => dff_synchronous_reset_clock_enable:inst4.Din
+Dout3 <= dff_synchronous_reset_clock_enable:inst2.Qout
+d3 => dff_synchronous_reset_clock_enable:inst2.Din
+Dout4 <= dff_synchronous_reset_clock_enable:inst3.Qout
+d4 => dff_synchronous_reset_clock_enable:inst3.Din
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst
+Qout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst3.IN0
+CLK => inst2.CLK
+RST => inst4.IN0
+Ce => BUSMUX:inst.sel
+Din => BUSMUX:inst.datab[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_i6c:auto_generated.data[0]
+data[1][0] => mux_i6c:auto_generated.data[1]
+sel[0] => mux_i6c:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_i6c:auto_generated.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst|BUSMUX:inst|lpm_mux:$00000|mux_i6c:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst4
+Qout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst3.IN0
+CLK => inst2.CLK
+RST => inst4.IN0
+Ce => BUSMUX:inst.sel
+Din => BUSMUX:inst.datab[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst4|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst4|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_i6c:auto_generated.data[0]
+data[1][0] => mux_i6c:auto_generated.data[1]
+sel[0] => mux_i6c:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_i6c:auto_generated.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst4|BUSMUX:inst|lpm_mux:$00000|mux_i6c:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst2
+Qout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst3.IN0
+CLK => inst2.CLK
+RST => inst4.IN0
+Ce => BUSMUX:inst.sel
+Din => BUSMUX:inst.datab[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst2|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst2|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_i6c:auto_generated.data[0]
+data[1][0] => mux_i6c:auto_generated.data[1]
+sel[0] => mux_i6c:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_i6c:auto_generated.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst2|BUSMUX:inst|lpm_mux:$00000|mux_i6c:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst3
+Qout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+CLK => inst3.IN0
+CLK => inst2.CLK
+RST => inst4.IN0
+Ce => BUSMUX:inst.sel
+Din => BUSMUX:inst.datab[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst3|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst3|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_i6c:auto_generated.data[0]
+data[1][0] => mux_i6c:auto_generated.data[1]
+sel[0] => mux_i6c:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_i6c:auto_generated.result[0]
+
+
+|double_four_bit_register|four_synchronous_dff_clock_enable:inst1|dff_synchronous_reset_clock_enable:inst3|BUSMUX:inst|lpm_mux:$00000|mux_i6c:auto_generated
+data[0] => result_node[0].IN1
+data[1] => result_node[0].IN1
+result[0] <= result_node[0].DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => result_node[0].IN0
+sel[0] => _.IN0
+
+
