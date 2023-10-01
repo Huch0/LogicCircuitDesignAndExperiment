@@ -1,0 +1,251 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/chiyeong/Documents/GitHub/LogicCircuitDesignAndExperiment/week5/simulation/qsim
+vCNT10
+Z1 !s110 1696160529
+!i10b 1
+!s100 D1lLSm;`l36jj7`3PJi>93
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IdkfY9n=n5GB^kW47lNd`o3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1696160527
+Z4 8week5.vo
+Z5 Fweek5.vo
+!i122 0
+L0 32 418
+Z6 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1696160528.000000
+Z7 !s107 week5.vo|
+Z8 !s90 -work|work|week5.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+n@c@n@t10
+vCNT100
+Z11 !s110 1696164386
+!i10b 1
+!s100 k[ZDo1_oUfUCKd]HciX:G2
+R2
+I_lhlREUA?zaaXo=RZ`jI^3
+R3
+R0
+w1696164385
+R4
+R5
+!i122 18
+L0 32 847
+R6
+r1
+!s85 0
+31
+Z12 !s108 1696164386.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@c@n@t100
+vCNT100_vlg_vec_tst
+R11
+!i10b 1
+!s100 Bl=P_0jgRjD6jGl_4eKk10
+R2
+IkOe`7kI0B]c`oZ7ami2jl2
+R3
+R0
+w1696164384
+8CNT100.vwf.vt
+FCNT100.vwf.vt
+!i122 19
+Z13 L0 30 34
+R6
+r1
+!s85 0
+31
+R12
+!s107 CNT100.vwf.vt|
+!s90 -work|work|CNT100.vwf.vt|
+!i113 1
+R9
+R10
+n@c@n@t100_vlg_vec_tst
+vCNT10_vlg_vec_tst
+R1
+!i10b 1
+!s100 6R7e_R>AcLld[oa?DEJ;=3
+R2
+I2X3ib3zA0N@nSX4:GKzB:1
+R3
+R0
+w1696160526
+8CNT10.vwf.vt
+FCNT10.vwf.vt
+!i122 1
+R13
+R6
+r1
+!s85 0
+31
+!s108 1696160529.000000
+!s107 CNT10.vwf.vt|
+!s90 -work|work|CNT10.vwf.vt|
+!i113 1
+R9
+R10
+n@c@n@t10_vlg_vec_tst
+vRegister1
+Z14 !s110 1696177592
+!i10b 1
+!s100 _TicPLcK040JHhmVbm`hl3
+R2
+I3=Tz`99L^oM8<9NQ1gZVh0
+R3
+R0
+w1696177591
+R4
+R5
+!i122 76
+L0 32 192
+R6
+r1
+!s85 0
+31
+Z15 !s108 1696177592.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@register1
+vRegister1_vlg_vec_tst
+R14
+!i10b 1
+!s100 HZZODJaZ4?i;ZJ>LaAEm12
+R2
+I2n4LcSQ<YO]BF1PbJS=V>0
+R3
+R0
+w1696177590
+8Register1.vwf.vt
+FRegister1.vwf.vt
+!i122 77
+L0 30 64
+R6
+r1
+!s85 0
+31
+R15
+!s107 Register1.vwf.vt|
+!s90 -work|work|Register1.vwf.vt|
+!i113 1
+R9
+R10
+n@register1_vlg_vec_tst
+vRegister2
+Z16 !s110 1696177322
+!i10b 1
+!s100 595:NI[:aV==8Kj8dP9NT0
+R2
+I>C`L>h^fjRfWmabmI5N633
+R3
+R0
+w1696177321
+R4
+R5
+!i122 74
+L0 32 232
+R6
+r1
+!s85 0
+31
+Z17 !s108 1696177322.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@register2
+vRegister2_vlg_vec_tst
+R16
+!i10b 1
+!s100 @9lJR:^=a8X5VQe_:IzWN2
+R2
+I91j]z7BGW0h_e5>>8FKbB0
+R3
+R0
+w1696177320
+8Register2.vwf.vt
+FRegister2.vwf.vt
+!i122 75
+L0 30 74
+R6
+r1
+!s85 0
+31
+R17
+!s107 Register2.vwf.vt|
+!s90 -work|work|Register2.vwf.vt|
+!i113 1
+R9
+R10
+n@register2_vlg_vec_tst
+vSRAM4x4
+Z18 !s110 1696176581
+!i10b 1
+!s100 @n9OEG=AJHh_HD4i<nXWQ0
+R2
+Io:fk93gl`Ub`:[<IH4z_b3
+R3
+R0
+w1696176580
+R4
+R5
+!i122 70
+L0 32 1088
+R6
+r1
+!s85 0
+31
+!s108 1696176580.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@s@r@a@m4x4
+vSRAM4x4_vlg_vec_tst
+R18
+!i10b 1
+!s100 o9A^DjZiZMZX8HZ7nSl2m1
+R2
+I@M^AHzz2BoU^G;2UgJoMF2
+R3
+R0
+w1696176578
+8SRAM4x4.vwf.vt
+FSRAM4x4.vwf.vt
+!i122 71
+L0 30 106
+R6
+r1
+!s85 0
+31
+!s108 1696176581.000000
+!s107 SRAM4x4.vwf.vt|
+!s90 -work|work|SRAM4x4.vwf.vt|
+!i113 1
+R9
+R10
+n@s@r@a@m4x4_vlg_vec_tst

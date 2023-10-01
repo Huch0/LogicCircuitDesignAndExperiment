@@ -1,0 +1,33 @@
+|Register1
+Dout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+rst_n => inst2.ACLR
+clk => inst2.CLK
+Ce => BUSMUX:inst.sel
+Din => BUSMUX:inst.datab[0]
+
+
+|Register1|BUSMUX:inst
+dataa[0] => lpm_mux:$00000.data[0][0]
+datab[0] => lpm_mux:$00000.data[1][0]
+sel => lpm_mux:$00000.sel[0]
+result[0] <= lpm_mux:$00000.result[0]
+
+
+|Register1|BUSMUX:inst|lpm_mux:$00000
+data[0][0] => mux_pjc:auto_generated.data[0]
+data[1][0] => mux_pjc:auto_generated.data[1]
+sel[0] => mux_pjc:auto_generated.sel[0]
+clock => ~NO_FANOUT~
+aclr => ~NO_FANOUT~
+clken => ~NO_FANOUT~
+result[0] <= mux_pjc:auto_generated.result[0]
+
+
+|Register1|BUSMUX:inst|lpm_mux:$00000|mux_pjc:auto_generated
+data[0] => l1_w0_n0_mux_dataout.IN1
+data[1] => l1_w0_n0_mux_dataout.IN1
+result[0] <= l1_w0_n0_mux_dataout.DB_MAX_OUTPUT_PORT_TYPE
+sel[0] => l1_w0_n0_mux_dataout.IN0
+sel[0] => _.IN0
+
+
