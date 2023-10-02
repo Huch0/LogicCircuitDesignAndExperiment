@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/02/2023 01:09:38"
+// Generated on "10/02/2023 13:31:19"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          SRAM4x4
 // 
@@ -37,7 +37,6 @@ reg rst_n;
 reg RW;
 // wires                                               
 wire [3:0] DataOut;
-wire [1:0] test_Address;
 
 // assign statements (if any)                          
 SRAM4x4 i1 (
@@ -47,8 +46,7 @@ SRAM4x4 i1 (
 	.DataIn(DataIn),
 	.DataOut(DataOut),
 	.rst_n(rst_n),
-	.RW(RW),
-	.test_Address(test_Address)
+	.RW(RW)
 );
 initial 
 begin 
@@ -65,8 +63,8 @@ end
 always
 begin
 	clk = 1'b0;
-	clk = #10000 1'b1;
-	#10000;
+	clk = #2500 1'b1;
+	#2500;
 end 
 
 // RW
